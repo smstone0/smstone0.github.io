@@ -7,6 +7,7 @@ const projects = [
         designUrl: "https://www.figma.com/design/ojnG7Z2LYuzCuDM0TMUUiA/Caloric?node-id=0-1&node-type=canvas&t=lJdGKqTurMDbI7DR-0",
         codeUrl: "https://github.com/smstone0/Caloric",
         thumbnail: "assets/caloric/caloric.png",
+        moreImages: [],
         languages: ["Flutter", "SQL", "Figma"]
     },
     {
