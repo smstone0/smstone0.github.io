@@ -1,5 +1,5 @@
 import React from 'react';
-import Projects from '../projects/Projects.js'
+import Projects from './Projects.js'
 import Header from '../header/Header.js';
 
 function Home() {

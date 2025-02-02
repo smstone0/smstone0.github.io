@@ -1,8 +1,8 @@
 import './App.css';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home.js';
-import MapUK from './pages/MapUK.js';
-import NotFound from './pages/NotFound.js';
+import Home from './projects/Home.js';
+import MapUK from './uk-map/MapUK.js';
+import NotFound from './NotFound.js';
 
 function App() {
   return (
