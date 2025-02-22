@@ -71,16 +71,51 @@
   object-fit: contain;
 }
 
-#reset {
+#buttons {
   position: absolute;
   top: 10px;
   left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: white;
-  color: black;
-  border: 2px solid black;
-  padding: 5px 10px;
+  border: 2.8px solid black;
+  border-radius: 5px;
+}
+
+#buttons svg {
+  margin: 5px 5px;
+  height: 25px;
+  width: 25px;
   cursor: pointer;
-  font-size: 20px;
+  fill: black;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+  position: absolute;
+  top: 100%; /* Place below */
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
 }
 
 #not-found {
