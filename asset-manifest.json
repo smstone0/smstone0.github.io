@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.6f8ef070.css",
-    "main.js": "/static/js/main.97baa332.js",
+    "main.css": "/static/css/main.24c572fc.css",
+    "main.js": "/static/js/main.01d0f654.js",
     "static/js/453.ed3810f9.chunk.js": "/static/js/453.ed3810f9.chunk.js",
     "static/media/MapChart_Map.svg": "/static/media/MapChart_Map.ea159eb083cef6937a0c5f2152d3fe8e.svg",
-    "static/media/github-mark-white.svg": "/static/media/github-mark-white.b93709bb85479ab992c05943e69c9648.svg",
-    "static/media/close.svg": "/static/media/close.b9872500b7bf83f3c6bd90ebc1f0872b.svg",
     "index.html": "/index.html",
-    "static/media/linkedin.svg": "/static/media/linkedin.b9c93f33a53667f8b95bbee52d2eb0e2.svg",
+    "static/media/github-mark-white.svg": "/static/media/github-mark-white.3575f325890c752370d47ef0b3d95d62.svg",
+    "static/media/close.svg": "/static/media/close.b9872500b7bf83f3c6bd90ebc1f0872b.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.4d117e384b5ff734e8732945decf3267.svg",
     "static/media/right-arrow.svg": "/static/media/right-arrow.97f11165446cb120cf1c3bf35ae3995e.svg",
     "static/media/left-arrow.svg": "/static/media/left-arrow.a9105c6b49474668358659ffb4d8e652.svg",
     "static/media/arrow-up-right.svg": "/static/media/arrow-up-right.68024c542a17fcc44f38ba22b1727e04.svg",
     "static/media/link.svg": "/static/media/link.d2a722c831e0c1f54f895e688612172c.svg",
     "static/media/delete.svg": "/static/media/delete.257df24c891ef30517525f6f1d37f4b0.svg",
     "static/media/download.svg": "/static/media/download.3b0bd743873f49d2028431ab078c4aca.svg",
-    "main.6f8ef070.css.map": "/static/css/main.6f8ef070.css.map",
-    "main.97baa332.js.map": "/static/js/main.97baa332.js.map",
+    "main.24c572fc.css.map": "/static/css/main.24c572fc.css.map",
+    "main.01d0f654.js.map": "/static/js/main.01d0f654.js.map",
     "453.ed3810f9.chunk.js.map": "/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f8ef070.css",
-    "static/js/main.97baa332.js"
+    "static/css/main.24c572fc.css",
+    "static/js/main.01d0f654.js"
   ]
 }
