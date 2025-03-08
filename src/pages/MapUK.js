@@ -140,18 +140,18 @@ function MapUK() {
         <div>
             {selectedCounty && <CountyCard countyName={selectedCounty} position={cardPosition} levelClick={levelClick}/>}
                 <span className="buttons radius">
-                    <span className="button-tooltip" onClick={reset}>
-                        <ResetIcon/>
+                    <button className="button-tooltip" onClick={reset}>
+                        <ResetIcon aria-label='Reset map'/>
                         <span className="button-tooltip-text radius tooltip">Reset</span>
-                    </span>
-                    <span className="button-tooltip" onClick={download}>
-                        <DownloadIcon/>
+                    </button>
+                    <button className="button-tooltip" onClick={download}>
+                        <DownloadIcon aria-label='Download map'/>
                         <span className="button-tooltip-text radius tooltip">Download</span>
-                    </span>
-                    <span className="button-tooltip">
-                        <a href="https://github.com/smstone0/smstone0.github.io"><GithubIcon/></a>
+                    </button>
+                    <button className="button-tooltip" onClick={() => window.open("https://github.com/smstone0/smstone0.github.io", "_blank")}>
+                        <GithubIcon aria-label='Visit Github'/>
                         <span className="button-tooltip-text radius tooltip">GitHub</span>
-                    </span>
+                    </button>
                 </span>
                 <Map onClick={countyClick} onMouseOver={countyHover}/>
         </div>

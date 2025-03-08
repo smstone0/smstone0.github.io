@@ -48,7 +48,7 @@ import languageIcons from '../language/iconMapping.js';
         </div>
         <div id="content">
           <a class="image-container" href={project.url}>
-          <img src={project.thumbnail} alt={project.url}></img>
+          <img src={project.thumbnail.src} alt={project.thumbnail.alt}></img>
           <MoreImages images={project.moreImages} toggleModal={toggleModal}></MoreImages>
           </a>
             <p id="description">{project.description}</p>

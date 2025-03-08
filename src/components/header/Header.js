@@ -10,8 +10,8 @@ function Header() {
         <h1 id="name">Sophie Stone</h1>
       </Link>
       <div id="icons">
-        <a href="https://github.com/smstone0"><GithubIcon/></a>
-        <a href="https://www.linkedin.com/in/sophie-stone-/"><LinkedInIcon/></a>
+        <a href="https://github.com/smstone0" aria-label='Visit Github'><GithubIcon/></a>
+        <a href="https://www.linkedin.com/in/sophie-stone-/" aria-label='Visit LinkedIn'><LinkedInIcon/></a>
       </div>
     </div>
   }

@@ -107,8 +107,15 @@
 }
 
 .button-tooltip {
+  all: unset;
   position: relative;
   display: inline-block;
+}
+
+/* Focus ring for tabbing */
+.button-tooltip:focus-visible {
+  outline: 2px solid black;
+  border-radius: 5px;
 }
 
 .button-tooltip-text {
