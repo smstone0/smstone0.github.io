@@ -1,3 +1,42 @@
+/*TODO: Tidy with existing modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  padding: 1.5rem;
+  width: 300px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-buttons button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.modal-close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+/*TODO: Tidy with existing modal */
+
 #modal {
   height: 100%;
   width: 100%;

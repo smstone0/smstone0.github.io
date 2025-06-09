@@ -31,12 +31,6 @@
   pointer-events: none;
 }
 
-#close-icon {
-  display: flex;
-  justify-self: end;
-  cursor: pointer;
-}
-
 #footnote-row {
   display: flex;
   justify-content: space-between;
