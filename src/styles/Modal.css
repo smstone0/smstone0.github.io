@@ -1,31 +1,3 @@
-/*TODO: Tidy with existing modal */
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-.modal {
-  background: white;
-  padding: 1.5rem;
-  width: 300px;
-  text-align: center;
-  position: relative;
-}
-
-.modal-buttons button {
-  margin: 0.5rem;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-}
-
 .modal-close {
   position: absolute;
   top: 5px;
@@ -35,9 +7,8 @@
   font-size: 1rem;
   cursor: pointer;
 }
-/*TODO: Tidy with existing modal */
 
-#modal {
+.modal-overlay {
   height: 100%;
   width: 100%;
   position: fixed;
@@ -50,7 +21,24 @@
   align-items: center;
 }
 
-#modal-container {
+.modal-light {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-buttons button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.download-modal-container {
+  background: white;
+  padding: 1.5rem;
+  text-align: center;
+  position: relative;
+}
+
+#project-modal-container {
   background-color: rgba(25, 25, 25, 1);
   display: flex;
   flex-direction: column;
@@ -86,7 +74,6 @@
   height: 100%;
   display: flex;
   flex-direction: column-reverse;
-  /* padding-top: 50px; */
   align-items: center;
   justify-self: start;
 }
@@ -162,7 +149,7 @@
     margin: 0px 10px 10px 10px;
   }
 
-  #modal-container {
+  #project-modal-container {
     border-radius: 15px;
     height: 75%;
     width: 80%;

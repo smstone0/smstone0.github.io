@@ -298,8 +298,8 @@ function CountyCard({ countyName, position, levelClick }) {
 
 function DownloadModal({ onClose, onDownloadSVG, onDownloadPNG }) {
   return (
-    <div className="modal-overlay" onClick={onClose}>
-      <div className="modal radius" onClick={(e) => e.stopPropagation()}>
+    <div className="modal-overlay modal-light" onClick={onClose}>
+      <div className="download-modal-container radius" onClick={(e) => e.stopPropagation()}>
         <div className="modal-buttons">
           <button onClick={onDownloadSVG}>SVG</button>
           <button onClick={onDownloadPNG}>PNG</button>
