@@ -159,31 +159,32 @@ function MapUK() {
     setDownloadModalOpen(false);
   };
 
-const downloadSVGasPNG = () => {
-  const svg = document.getElementById("map");
-  const svgData = new XMLSerializer().serializeToString(svg);
-  const canvas = document.createElement("canvas");
-  const ctx = canvas.getContext("2d");
-  const img = new Image();
+  const downloadSVGasPNG = () => {
+    const svg = document.getElementById("map");
+    const svgData = new XMLSerializer().serializeToString(svg);
+    const canvas = document.createElement("canvas");
+    const ctx = canvas.getContext("2d");
+    const img = new Image();
 
-  const svgBlob = new Blob([svgData], { type: "image/svg+xml;charset=utf-8" });
-  const url = URL.createObjectURL(svgBlob);
+    const svgBlob = new Blob([svgData], {
+      type: "image/svg+xml;charset=utf-8",
+    });
+    const url = URL.createObjectURL(svgBlob);
 
-  img.onload = () => {
-    canvas.width = img.width;
-    canvas.height = img.height;
-    ctx.drawImage(img, 0, 0);
-    URL.revokeObjectURL(url);
+    img.onload = () => {
+      canvas.width = img.width;
+      canvas.height = img.height;
+      ctx.drawImage(img, 0, 0);
+      URL.revokeObjectURL(url);
 
-    const pngLink = document.createElement("a");
-    pngLink.download = "map.png";
-    pngLink.href = canvas.toDataURL("image/png");
-    pngLink.click();
+      const pngLink = document.createElement("a");
+      pngLink.download = "map.png";
+      pngLink.href = canvas.toDataURL("image/png");
+      pngLink.click();
+    };
+
+    img.src = url;
   };
-
-  img.src = url;
-};
-
 
   return (
     <div>
@@ -199,7 +200,10 @@ const downloadSVGasPNG = () => {
           <ResetIcon aria-label="Reset map" />
           <span className="button-tooltip-text radius tooltip">Reset</span>
         </button>
-        <button className="button-tooltip" onClick={() => setDownloadModalOpen(true)}>
+        <button
+          className="button-tooltip"
+          onClick={() => setDownloadModalOpen(true)}
+        >
           <DownloadIcon aria-label="Download map" />
           <span className="button-tooltip-text radius tooltip">Download</span>
         </button>
@@ -285,12 +289,24 @@ function CountyCard({ countyName, position, levelClick }) {
     >
       <p id="county-name">{countyName}</p>
       <div id="card-options">
-        <p id="lived" onClick={() => levelClick(5)}>Lived here</p>
-        <p id="stayed" onClick={() => levelClick(4)}>Stayed here</p>
-        <p id="visited" onClick={() => levelClick(3)}>Visited here</p>
-        <p id="stopped" onClick={() => levelClick(2)}>Stopped here</p>
-        <p id="passed" onClick={() => levelClick(1)}>Passed here</p>
-        <p id="never-been" onClick={() => levelClick(0)}>Never been here</p>
+        <p id="lived" onClick={() => levelClick(5)}>
+          Lived here
+        </p>
+        <p id="stayed" onClick={() => levelClick(4)}>
+          Stayed here
+        </p>
+        <p id="visited" onClick={() => levelClick(3)}>
+          Visited here
+        </p>
+        <p id="stopped" onClick={() => levelClick(2)}>
+          Stopped here
+        </p>
+        <p id="passed" onClick={() => levelClick(1)}>
+          Passed here
+        </p>
+        <p id="never-been" onClick={() => levelClick(0)}>
+          Never been here
+        </p>
       </div>
     </div>
   );
@@ -299,12 +315,12 @@ function CountyCard({ countyName, position, levelClick }) {
 function DownloadModal({ onClose, onDownloadSVG, onDownloadPNG }) {
   return (
     <div className="modal-overlay modal-light" onClick={onClose}>
-      <div className="download-modal-container radius" onClick={(e) => e.stopPropagation()}>
+      <div
+        className="download-modal-container radius"
+        onClick={(e) => e.stopPropagation()}
+      >
         <div id="save-as">Save map as:</div>
-            <CloseIcon
-              className="modal-close"
-              onClick={onClose}
-            />
+        <CloseIcon className="modal-close" onClick={onClose} />
         <div className="modal-buttons">
           <button onClick={onDownloadSVG}>SVG</button>
           <button onClick={onDownloadPNG}>PNG</button>

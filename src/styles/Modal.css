@@ -35,7 +35,9 @@
   background-color: #1e88e5;
   border: none;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-  transition: background-color 0.2s ease, transform 0.1s ease;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
 }
 
 .modal-buttons button:hover {
