@@ -31,12 +31,6 @@
   pointer-events: none;
 }
 
-#close-icon {
-  display: flex;
-  justify-self: end;
-  cursor: pointer;
-}
-
 #footnote-row {
   display: flex;
   justify-content: space-between;
@@ -77,6 +71,12 @@
   .tooltip-text {
     display: none;
   }
+}
+
+#save-as {
+  color: black;
+  justify-self: center;
+  padding-bottom: 5px;
 }
 
 #footnote {

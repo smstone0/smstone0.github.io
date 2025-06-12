@@ -5,6 +5,7 @@ import { ReactComponent as DownloadIcon } from "../assets/download.svg";
 import { ReactComponent as ResetIcon } from "../assets/delete.svg";
 import { ReactComponent as InfoIcon } from "../assets/info.svg";
 import "../styles/MapUK.css";
+import "../styles/Modal.css";
 import { ReactComponent as CloseIcon } from "../assets/close-black.svg";
 
 function MapUK() {
@@ -15,6 +16,7 @@ function MapUK() {
     return savedScores ? JSON.parse(savedScores) : {};
   });
   const [footnoteOpen, setFootnoteOpen] = useState(false);
+  const [isDownloadModalOpen, setDownloadModalOpen] = useState(false);
 
   /**
    * Colour map and calculate total level when countyScores change
@@ -141,7 +143,7 @@ function MapUK() {
     localStorage.setItem("countyScores", JSON.stringify(resetScores)); // Save to localStorage
   };
 
-  const download = () => {
+  const downloadSVG = () => {
     const svgElement = document.getElementById("map");
     const serializer = new XMLSerializer();
     const svgString = serializer.serializeToString(svgElement);
@@ -154,6 +156,34 @@ function MapUK() {
     link.click();
     document.body.removeChild(link);
     URL.revokeObjectURL(url);
+    setDownloadModalOpen(false);
+  };
+
+  const downloadSVGasPNG = () => {
+    const svg = document.getElementById("map");
+    const svgData = new XMLSerializer().serializeToString(svg);
+    const canvas = document.createElement("canvas");
+    const ctx = canvas.getContext("2d");
+    const img = new Image();
+
+    const svgBlob = new Blob([svgData], {
+      type: "image/svg+xml;charset=utf-8",
+    });
+    const url = URL.createObjectURL(svgBlob);
+
+    img.onload = () => {
+      canvas.width = img.width;
+      canvas.height = img.height;
+      ctx.drawImage(img, 0, 0);
+      URL.revokeObjectURL(url);
+
+      const pngLink = document.createElement("a");
+      pngLink.download = "map.png";
+      pngLink.href = canvas.toDataURL("image/png");
+      pngLink.click();
+    };
+
+    img.src = url;
   };
 
   return (
@@ -170,7 +200,10 @@ function MapUK() {
           <ResetIcon aria-label="Reset map" />
           <span className="button-tooltip-text radius tooltip">Reset</span>
         </button>
-        <button className="button-tooltip" onClick={download}>
+        <button
+          className="button-tooltip"
+          onClick={() => setDownloadModalOpen(true)}
+        >
           <DownloadIcon aria-label="Download map" />
           <span className="button-tooltip-text radius tooltip">Download</span>
         </button>
@@ -187,13 +220,20 @@ function MapUK() {
           <span className="button-tooltip-text radius tooltip">GitHub</span>
         </button>
       </span>
+      {isDownloadModalOpen && (
+        <DownloadModal
+          onClose={() => setDownloadModalOpen(false)}
+          onDownloadSVG={downloadSVG}
+          onDownloadPNG={downloadSVGasPNG}
+        />
+      )}
       {footnoteOpen ? (
         <div id="footnote" onMouseLeave={() => setFootnoteOpen(false)}>
           <div className="footnote-container radius">
             <div id="footnote-row">
               <p>Visualise your UK travel and share with friends and family!</p>
               <CloseIcon
-                id="close-icon"
+                className="modal-close"
                 onClick={() => setFootnoteOpen(false)}
               />
             </div>
@@ -267,6 +307,24 @@ function CountyCard({ countyName, position, levelClick }) {
         <p id="never-been" onClick={() => levelClick(0)}>
           Never been here
         </p>
+      </div>
+    </div>
+  );
+}
+
+function DownloadModal({ onClose, onDownloadSVG, onDownloadPNG }) {
+  return (
+    <div className="modal-overlay modal-light" onClick={onClose}>
+      <div
+        className="download-modal-container radius"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div id="save-as">Save map as:</div>
+        <CloseIcon className="modal-close" onClick={onClose} />
+        <div className="modal-buttons">
+          <button onClick={onDownloadSVG}>SVG</button>
+          <button onClick={onDownloadPNG}>PNG</button>
+        </div>
       </div>
     </div>
   );

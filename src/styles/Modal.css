@@ -1,4 +1,14 @@
-#modal {
+.modal-close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.modal-overlay {
   height: 100%;
   width: 100%;
   position: fixed;
@@ -11,7 +21,41 @@
   align-items: center;
 }
 
-#modal-container {
+.modal-light {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-buttons button {
+  margin: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: white;
+  background-color: #1e88e5;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.modal-buttons button:hover {
+  background-color: #1565c0;
+}
+
+.download-modal-container {
+  background: white;
+  padding: 1rem;
+  text-align: center;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2.8px solid black;
+}
+
+#project-modal-container {
   background-color: rgba(25, 25, 25, 1);
   display: flex;
   flex-direction: column;
@@ -47,7 +91,6 @@
   height: 100%;
   display: flex;
   flex-direction: column-reverse;
-  /* padding-top: 50px; */
   align-items: center;
   justify-self: start;
 }
@@ -88,7 +131,7 @@
   margin-right: 10px;
 }
 
-#modal-header {
+.project-modal-header {
   font-size: 12px;
   justify-content: space-between;
   display: flex;
@@ -118,12 +161,12 @@
     width: 80%;
   }
 
-  #modal-header {
+  .project-modal-header {
     font-size: 15px;
     margin: 0px 10px 10px 10px;
   }
 
-  #modal-container {
+  #project-modal-container {
     border-radius: 15px;
     height: 75%;
     width: 80%;
