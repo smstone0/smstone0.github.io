@@ -73,6 +73,12 @@
   }
 }
 
+#save-as {
+  color: black;
+  justify-self: center;
+  padding-bottom: 5px;
+}
+
 #footnote {
   position: fixed;
   bottom: 10px;

@@ -27,15 +27,30 @@
 
 .modal-buttons button {
   margin: 0.5rem;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
   cursor: pointer;
+  font-size: 0.9rem;
+  color: white;
+  background-color: #1e88e5;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.modal-buttons button:hover {
+  background-color: #1565c0;
 }
 
 .download-modal-container {
   background: white;
-  padding: 1.5rem;
+  padding: 1rem;
   text-align: center;
-  position: relative;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2.8px solid black;
 }
 
 #project-modal-container {
@@ -114,7 +129,7 @@
   margin-right: 10px;
 }
 
-#modal-header {
+.project-modal-header {
   font-size: 12px;
   justify-content: space-between;
   display: flex;
@@ -144,7 +159,7 @@
     width: 80%;
   }
 
-  #modal-header {
+  .project-modal-header {
     font-size: 15px;
     margin: 0px 10px 10px 10px;
   }

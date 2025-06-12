@@ -23,7 +23,7 @@ function Modal({ images, onClose, project }) {
   return (
     <div className="modal-overlay" onClick={handleClickOutside}>
       <div id="project-modal-container">
-        <div id="modal-header">
+        <div className="project-modal-header">
           <h2>More images from {project.title}</h2>
           <CloseIcon id="exit" onClick={onClose} />
         </div>

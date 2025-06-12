@@ -300,14 +300,15 @@ function DownloadModal({ onClose, onDownloadSVG, onDownloadPNG }) {
   return (
     <div className="modal-overlay modal-light" onClick={onClose}>
       <div className="download-modal-container radius" onClick={(e) => e.stopPropagation()}>
+        <div id="save-as">Save map as:</div>
+            <CloseIcon
+              className="modal-close"
+              onClick={onClose}
+            />
         <div className="modal-buttons">
           <button onClick={onDownloadSVG}>SVG</button>
           <button onClick={onDownloadPNG}>PNG</button>
         </div>
-              <CloseIcon
-                className="modal-close"
-                onClick={onClose}
-              />
       </div>
     </div>
   );
