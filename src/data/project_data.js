@@ -16,11 +16,16 @@ const projects = [
   {
     title: "Caloric",
     date: "2023 - PRESENT",
-    description: `A cross-platform calorie counting app designed for minimalism and simplicity. Provides a beginner-friendly method to track nutrition by focusing on the essentials, eliminating detail such as macros and meal times. Started this project to learn mobile development and interface design.`,
+    description: `A cross-platform calorie counting app designed for simplicity and offline use, with a focus on beginner-friendly nutrition tracking by removing complexity like macros, meal times, and monetisation. I started this project to learn mobile development and interface design, prototyped with Figma and planned for Play Store release. Currently (mostly) on pause due to other commitments, but I plan to resume development in the future.`,
     thumbnail: {
       src: "assets/caloric/caloric.png",
       alt: "Caloric App Thumbnail",
     },
+    moreImages: [
+      "assets/caloric/home.jpg",
+      "assets/caloric/past.jpg",
+      "assets/caloric/items.jpg",
+    ],
     languages: ["Flutter", "SQLite", "Figma"],
     links: [
       {
