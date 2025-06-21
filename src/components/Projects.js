@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import projects from "../data/project_data.js";
 import "../styles/Projects.css";
 import { ReactComponent as LinkIcon } from "../assets/link.svg";

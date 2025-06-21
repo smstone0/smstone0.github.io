@@ -9,6 +9,9 @@ function Home() {
           <Header />
         </header>
         <Projects />
+        <footer>
+          <div id="project-page-footnote">Last updated: June 2025</div>
+        </footer>
       </div>
     </div>
   );
