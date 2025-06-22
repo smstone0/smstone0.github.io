@@ -1,5 +1,22 @@
 const projects = [
   {
+    title: "Company Chat Tools Tracker",
+    date: "2025",
+    description: `A public GitHub list crowdsourcing employee-reported data on which chat tools (Slack, Microsoft Teams, etc) are used across tech companies, including big tech, fintech and startups.
+    
+Aimed at job seekers and curious engineers, the list highlights industry usage patterns that often aren't disclosed in job descriptions or company websites.`,
+    thumbnail: {
+      src: "assets/slack-vs-teams.png",
+      alt: "Slack vs Teams Companies Thumbnail",
+    },
+    links: [
+      {
+        text: "View on GitHub",
+        url: "https://github.com/smstone0/slack-vs-teams-jobs",
+      },
+    ],
+  },
+  {
     title: "UK Travel Visualiser",
     date: "2025",
     description: `An interactive map to visualise travel within the UK, allowing users to mark areas as lived, stayed, visited, stopped, passed through, or never been. The selected areas are filled with corresponding colours, and the UK 'level' is dynamically updated. The map supports persistence via local storage and offers the option to download and share with others.`,
@@ -16,7 +33,9 @@ const projects = [
   {
     title: "Caloric",
     date: "2023 - PRESENT",
-    description: `A cross-platform calorie counting app designed for simplicity and offline use, with a focus on beginner-friendly nutrition tracking by removing complexity like macros, meal times, and monetisation. I started this project to learn mobile development and interface design, prototyped with Figma and planned for Play Store release. Currently (mostly) on pause due to other commitments, but I plan to resume development in the future.`,
+    description: `A cross-platform calorie counting app designed for simplicity and offline use, with a focus on beginner-friendly nutrition tracking by removing complexity like macros, meal times, and monetisation. I started this project to learn mobile development and interface design, prototyped with Figma and planned for Play Store release. 
+
+Currently (mostly) on pause due to other commitments, but I plan to resume development in the future.`,
     thumbnail: {
       src: "assets/caloric/caloric.png",
       alt: "Caloric App Thumbnail",
