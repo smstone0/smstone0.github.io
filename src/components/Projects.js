@@ -8,7 +8,7 @@ import languageIcons from "./language/iconMapping.js";
 import Dropdown from "./Dropdown.js";
 
 const techStackFrequency = projects
-  .flatMap((project) => project.languages)
+  .flatMap((project) => project.languages || [])
   .reduce((acc, language) => {
     acc[language] = (acc[language] || 0) + 1;
     return acc;
@@ -32,10 +32,12 @@ function Projects() {
   const filteredProjects =
     selectedTechStacks.length === 0
       ? projects
-      : projects.filter((project) =>
-          project.languages.some((language) =>
-            selectedTechStacks.includes(language),
-          ),
+      : projects.filter(
+          (project) =>
+            project.languages &&
+            project.languages.some((language) =>
+              selectedTechStacks.includes(language),
+            ),
         );
 
   return (
@@ -82,18 +84,19 @@ function Project({ project }) {
         <h3 id="title">{project.title}</h3>
         <div id="languages-date">
           <div className="languages">
-            {project.languages.map((language, index) => {
-              const LanguageIcon = languageIcons[language];
-              return LanguageIcon ? (
-                <LanguageIcon />
-              ) : (
-                <span key={index} className="language">
-                  {language}
-                </span>
-              );
-            })}
+            {project.languages &&
+              project.languages.map((language, index) => {
+                const LanguageIcon = languageIcons[language];
+                return LanguageIcon ? (
+                  <LanguageIcon key={index} />
+                ) : (
+                  <span key={index} className="language">
+                    {language}
+                  </span>
+                );
+              })}
           </div>
-          <p id="separator">|</p>
+          {project.languages && <p id="separator">|</p>}
           <p id="date">{project.date}</p>
         </div>
       </div>
