@@ -46,7 +46,7 @@
     "@svgr/webpack": "^8.1.0",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^10.1.5",
-    "eslint-plugin-prettier": "^5.4.0",
+    "eslint-plugin-prettier": "^5.5.4",
     "gh-pages": "^6.1.1",
     "prettier": "^3.5.3"
   }
