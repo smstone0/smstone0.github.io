@@ -4,14 +4,14 @@
   "homepage": "https://smstone0.github.io/",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^7.0.1",
+    "@testing-library/jest-dom": "^6.6.4",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.8.0",
     "react-scripts": "^5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^5.1.0"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -44,10 +44,10 @@
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
-    "eslint": "^8.57.1",
-    "eslint-config-prettier": "^10.1.5",
-    "eslint-plugin-prettier": "^5.4.0",
+    "eslint": "^9.33.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
     "gh-pages": "^6.1.1",
-    "prettier": "^3.5.3"
+    "prettier": "^3.6.2"
   }
 }
