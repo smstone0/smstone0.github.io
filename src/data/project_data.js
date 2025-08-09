@@ -1,5 +1,19 @@
 const projects = [
   {
+    title: "UK Travel Visualiser",
+    date: "2025",
+    description: `An interactive map to visualise travel within the UK, allowing users to mark areas as lived, stayed, visited, stopped, passed through, or never been. The selected areas are filled with corresponding colours, and the UK 'level' is dynamically updated. The map supports persistence via local storage and offers the option to download and share with others.`,
+    thumbnail: {
+      src: "assets/MapChart_Map.svg",
+      alt: "UK Travel Visualiser Thumbnail",
+    },
+    languages: ["React", "JavaScript", "HTML", "CSS"],
+    links: [
+      { text: "Page", url: "smstone0.github.io/#/uk-map" },
+      { text: "Code", url: "https://github.com/smstone0/smstone0.github.io" },
+    ],
+  },
+  {
     title: "Company Chat Tools Tracker",
     date: "2025",
     description: `A public GitHub list crowdsourcing employee-reported data on which chat tools (Slack, Microsoft Teams, etc) are used across tech companies, including big tech, fintech and startups.
@@ -14,20 +28,6 @@ Aimed at job seekers and curious engineers, the list highlights industry usage p
         text: "View on GitHub",
         url: "https://github.com/smstone0/slack-vs-teams-jobs",
       },
-    ],
-  },
-  {
-    title: "UK Travel Visualiser",
-    date: "2025",
-    description: `An interactive map to visualise travel within the UK, allowing users to mark areas as lived, stayed, visited, stopped, passed through, or never been. The selected areas are filled with corresponding colours, and the UK 'level' is dynamically updated. The map supports persistence via local storage and offers the option to download and share with others.`,
-    thumbnail: {
-      src: "assets/MapChart_Map.svg",
-      alt: "UK Travel Visualiser Thumbnail",
-    },
-    languages: ["React", "JavaScript", "HTML", "CSS"],
-    links: [
-      { text: "Page", url: "smstone0.github.io/#/uk-map" },
-      { text: "Code", url: "https://github.com/smstone0/smstone0.github.io" },
     ],
   },
   {
