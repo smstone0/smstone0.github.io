@@ -183,7 +183,7 @@ To simulate real-world execution, the system includes an I/O daemon to handle bl
   {
     title: "GWC 2022",
     date: "2022",
-    description: `Three web projects I built during the Girls Who Code Summer Immersion Program in 2022, a two-week virtual program sponsored by Morgan Stanley. This was my first formal introduction to HTML, CSS and JavaScript and putting these skills into practice, including adherence web content accessibility guidelines, such as colour contrast and alt text.
+    description: `Three web projects I built during the Girls Who Code Summer Immersion Program in 2022, a two-week virtual program sponsored by Morgan Stanley. This was my first formal introduction to HTML, CSS and JavaScript and putting these skills into practice, including adherence to web content accessibility guidelines, such as colour contrast and alt text.
 
 1. An 'activist website' to spread awareness about a global issue - I chose electric vehicles (EVs)
 2. A personal website
