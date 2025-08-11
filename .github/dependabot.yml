@@ -5,9 +5,9 @@ updates:
   - package-ecosystem: "npm" # Ecosystem to update
     directory: "/" # Location of package manifests
     schedule:
-      interval: "weekly"
+      interval: "monthly"
     open-pull-requests-limit: 3
     groups:
       all-deps:
         patterns:
-          - "*"
+          - "*" # Group all updates under a single PR
