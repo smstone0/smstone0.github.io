@@ -4,12 +4,12 @@
   "homepage": "https://smstone0.github.io/",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^6.6.4",
+    "@testing-library/jest-dom": "^6.8.0",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "react-router-dom": "^7.8.0",
+    "react-router-dom": "^7.8.2",
     "react-scripts": "^5.0.1",
     "web-vitals": "^5.1.0"
   },
