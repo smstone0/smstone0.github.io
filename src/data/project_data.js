@@ -187,7 +187,10 @@ To simulate real-world execution, the system includes an I/O daemon to handle bl
 
 1. An 'activist website' to spread awareness about a global issue - I chose electric vehicles (EVs)
 2. A personal website
-3. A BuzzFeed-style 'personality quiz' - I chose summer vs winter`,
+3. A BuzzFeed-style 'personality quiz' - I chose summer vs winter
+
+I also featured in Times Square for completing the program.
+`,
     thumbnail: {
       src: "assets/gwc/activist-website.png",
       alt: "Activist Website",
@@ -196,6 +199,7 @@ To simulate real-world execution, the system includes an I/O daemon to handle bl
       "assets/gwc/activist-website.png",
       "assets/gwc/personal-website.png",
       "assets/gwc/quiz.png",
+      "assets/gwc/times-square.jpg",
     ],
     languages: ["HTML", "CSS", "JavaScript"],
     links: [{ text: "Code", url: "https://github.com/smstone0/gwc-2022" }],

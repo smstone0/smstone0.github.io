@@ -13,7 +13,7 @@ function Home() {
         </p>
         <Projects />
         <footer>
-          <div id="project-page-footnote">Last updated: August 2025</div>
+          <div id="project-page-footnote">Last updated: November 2025</div>
         </footer>
       </div>
     </div>
