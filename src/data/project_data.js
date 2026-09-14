@@ -29,7 +29,10 @@ const projects = [
       src: "assets/hai/dialogue.png",
       alt: "Interactive NLP-Based AI System for Calendar Management Thumbnail",
     },
-    moreImages: ["assets/hai/dialogue.png", "assets/hai/system-architecture.png"],
+    moreImages: [
+      "assets/hai/dialogue.png",
+      "assets/hai/system-architecture.png",
+    ],
     languages: ["Python"],
   },
   {
@@ -99,7 +102,11 @@ To simulate real-world execution, the system includes an I/O daemon to handle bl
       src: "assets/dms/game.png",
       alt: "Developing Maintainable Software Thumbnail",
     },
-    moreImages: ["assets/dms/game.png", "assets/dms/scores.png", "assets/dms/settings.png"],
+    moreImages: [
+      "assets/dms/game.png",
+      "assets/dms/scores.png",
+      "assets/dms/settings.png",
+    ],
     languages: ["Java"],
   },
   {
