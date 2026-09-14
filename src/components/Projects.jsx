@@ -1,10 +1,10 @@
 import { useState } from "react";
 import projects from "../data/project_data.js";
 import "../styles/Projects.css";
-import LinkIcon from "../assets/link.svg?react";
-import ArrowIcon from "../assets/arrow-up-right.svg?react";
+import LinkIcon from "../assets/icons/link.svg?react";
+import ArrowIcon from "../assets/icons/arrow-up-right.svg?react";
 import Modal from "./Modal.jsx";
-import languageIcons from "./language/iconMapping.js";
+import languageIcons from "../data/icon_mapping.js";
 import Dropdown from "./Dropdown.jsx";
 
 const techStackFrequency = projects

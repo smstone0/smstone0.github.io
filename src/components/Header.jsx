@@ -1,5 +1,5 @@
-import GithubIcon from "../assets/github-mark-white.svg?react";
-import LinkedInIcon from "../assets/linkedin.svg?react";
+import GithubIcon from "../assets/icons/github-mark-white.svg?react";
+import LinkedInIcon from "../assets/icons/linkedin.svg?react";
 import "../styles/Header.css";
 import { Link } from "react-router-dom";
 

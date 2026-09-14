@@ -1,4 +1,3 @@
-const FirebaseIcon = () => (
   <svg viewBox="0 0 128 128">
     <path
       fill="#ffa000"
@@ -23,6 +22,3 @@ const FirebaseIcon = () => (
       opacity=".2"
     ></path>
   </svg>
-);
-
-export default FirebaseIcon;
