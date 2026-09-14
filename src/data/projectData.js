@@ -20,7 +20,7 @@ const projects = [
       alt: "Personal Generative AI Carbon Emissions Tracker Thumbnail",
     },
     moreImages: ["assets/dissertation.png"],
-    languages: ["Kotlin", "Jetpack Compose"],
+    languages: ["Kotlin", "JetpackCompose"],
   },
   {
     title: "Interactive NLP-Based AI System for Calendar Management",

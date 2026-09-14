@@ -11,6 +11,8 @@ import PythonIcon from "../assets/languages/python.svg?react";
 import FirebaseIcon from "../assets/languages/firebase.svg?react";
 import PHPIcon from "../assets/languages/php.svg?react";
 import MySQLIcon from "../assets/languages/mysql.svg?react";
+import KotlinIcon from "../assets/languages/kotlin.svg?react";
+import JetpackComposeIcon from "../assets/languages/jetpack-compose.svg?react";
 
 const languageIcons = {
   JavaScript: JavaScriptIcon,
@@ -26,6 +28,8 @@ const languageIcons = {
   Firebase: FirebaseIcon,
   PHP: PHPIcon,
   MySQL: MySQLIcon,
+  Kotlin: KotlinIcon,
+  JetpackCompose: JetpackComposeIcon,
 };
 
 export default languageIcons;
