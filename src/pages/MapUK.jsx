@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import Map from "../assets/MapChart_Map.svg?react";
-import GithubIcon from "../assets/github-mark-white.svg?react";
-import DownloadIcon from "../assets/download.svg?react";
-import ResetIcon from "../assets/delete.svg?react";
-import InfoIcon from "../assets/info.svg?react";
+import GithubIcon from "../assets/icons/github-mark-white.svg?react";
+import DownloadIcon from "../assets/icons/download.svg?react";
+import ResetIcon from "../assets/icons/delete.svg?react";
+import InfoIcon from "../assets/icons/info.svg?react";
 import "../styles/MapUK.css";
 import "../styles/Modal.css";
-import CloseIcon from "../assets/close-black.svg?react";
+import CloseIcon from "../assets/icons/close-black.svg?react";
 
 function MapUK() {
   const [selectedCounty, setSelectedCounty] = useState(null);

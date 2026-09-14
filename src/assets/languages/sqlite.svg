@@ -1,4 +1,3 @@
-const SQLiteIcon = () => (
   <svg viewBox="0 0 128 128">
     <defs>
       <linearGradient
@@ -28,6 +27,3 @@ const SQLiteIcon = () => (
       fill="#003956"
     ></path>
   </svg>
-);
-
-export default SQLiteIcon;

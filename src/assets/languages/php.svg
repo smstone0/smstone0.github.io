@@ -1,4 +1,3 @@
-const PHPIcon = () => (
   <svg viewBox="0 0 128 128">
     <path
       fill="url(#a)"
@@ -39,6 +38,3 @@ const PHPIcon = () => (
       </radialGradient>
     </defs>
   </svg>
-);
-
-export default PHPIcon;
