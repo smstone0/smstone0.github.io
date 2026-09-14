@@ -10,15 +10,14 @@
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.9.6",
-    "react-scripts": "^5.0.1",
     "web-vitals": "^5.1.0"
   },
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "vite",
+    "build": "vite build",
+    "test": "vitest",
     "eject": "react-scripts eject",
     "lint": "eslint . --ext .js,.jsx",
     "format": "prettier --write .",
@@ -44,7 +43,10 @@
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
+    "@vitejs/plugin-react": "^4.7.0",
     "gh-pages": "^6.1.1",
-    "prettier": "^3.7.3"
+    "prettier": "^3.7.3",
+    "vite": "^6.4.3",
+    "vite-plugin-svgr": "^5.2.0"
   }
 }

@@ -1,5 +1,4 @@
-import Header from "../components/Header.js";
-import image from "../assets/404.jpg";
+import Header from "../components/Header";
 
 function NotFound() {
   return (
@@ -10,7 +9,6 @@ function NotFound() {
         </header>
         <div id="not-found">
           <h1>Page not found!</h1>
-          <img src={image} alt="404" id="not-found-image" />
         </div>
       </div>
     </div>

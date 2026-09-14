@@ -1,11 +1,11 @@
 import { useState } from "react";
 import projects from "../data/project_data.js";
 import "../styles/Projects.css";
-import { ReactComponent as LinkIcon } from "../assets/link.svg";
-import { ReactComponent as ArrowIcon } from "../assets/arrow-up-right.svg";
-import Modal from "./Modal.js";
+import LinkIcon from "../assets/link.svg?react";
+import ArrowIcon from "../assets/arrow-up-right.svg?react";
+import Modal from "./Modal.jsx";
 import languageIcons from "./language/iconMapping.js";
-import Dropdown from "./Dropdown.js";
+import Dropdown from "./Dropdown.jsx";
 
 const techStackFrequency = projects
   .flatMap((project) => project.languages || [])

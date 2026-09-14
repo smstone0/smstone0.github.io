@@ -13,9 +13,9 @@ const FlutterIcon = () => (
       x2="86.825"
       y2="99.399"
     >
-      <stop offset="0" stop-color="#1b4e94"></stop>
-      <stop offset=".63" stop-color="#1a5497"></stop>
-      <stop offset="1" stop-color="#195a9b"></stop>
+      <stop offset="0" stopColor="#1b4e94"></stop>
+      <stop offset=".63" stopColor="#1a5497"></stop>
+      <stop offset="1" stopColor="#195a9b"></stop>
     </linearGradient>
     <path
       fill="url(#flutter-original-a)"

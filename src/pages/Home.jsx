@@ -1,5 +1,5 @@
-import Projects from "../components/Projects.js";
-import Header from "../components/Header.js";
+import Projects from "../components/Projects";
+import Header from "../components/Header";
 
 function Home() {
   return (
