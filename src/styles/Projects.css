@@ -68,13 +68,7 @@
   font-size: 1.5em;
   font-weight: 500;
   color: #8ee8ff;
-  margin: 0;
-}
-
-#date {
-  font-size: medium;
-  font-weight: bold;
-  color: #d9d9d9;
+  margin: 4px;
 }
 
 .image-container {
@@ -206,10 +200,6 @@
 
   #title {
     width: 100%;
-  }
-
-  #separator {
-    display: none;
   }
 
   #languages-date {

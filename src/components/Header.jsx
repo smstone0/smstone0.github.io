@@ -1,4 +1,3 @@
-import React from "react";
 import GithubIcon from "../assets/github-mark-white.svg?react";
 import LinkedInIcon from "../assets/linkedin.svg?react";
 import "../styles/Header.css";

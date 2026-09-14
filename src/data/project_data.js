@@ -1,7 +1,6 @@
 const projects = [
   {
     title: "UK Travel Visualiser",
-    date: "2025",
     description: `An interactive map to visualise travel within the UK, allowing users to mark areas as lived, stayed, visited, stopped, passed through, or never been. The selected areas are filled with corresponding colours, and the UK 'level' is dynamically updated. The map supports persistence via local storage and offers the option to download and share with others.`,
     thumbnail: {
       src: "assets/MapChart_Map.svg",
@@ -14,30 +13,30 @@ const projects = [
     ],
   },
   {
-    title: "Company Chat Tools Tracker",
-    date: "2025",
-    description: `A public GitHub list crowdsourcing employee-reported data on which chat tools (Slack, Microsoft Teams, etc) are used across tech companies, including big tech, fintech and startups.
-    
-Aimed at job seekers and curious engineers, the list highlights industry usage patterns that often aren't disclosed in job descriptions or company websites.`,
+    title: "Personal Generative AI Carbon Emissions Tracker",
+    description: `For my dissertation, I designed and built an Android-native mobile app estimating carbon emissions from personal generative AI usage, informed by a 110-participant survey and a technical feasibility study. Ran a qualitative user deployment study, iterating the app design based on findings across two development stages. Found the app increased environmental awareness and drove behavioural change, with users reporting intent to continue use. Achieved 82\%, graded as demonstrating publishable-quality research and professional-standard software.`,
     thumbnail: {
-      src: "assets/slack-vs-teams.png",
-      alt: "Slack vs Teams Companies Thumbnail",
+      src: "assets/dissertation.png",
+      alt: "Personal Generative AI Carbon Emissions Tracker Thumbnail",
     },
-    links: [
-      {
-        text: "View on GitHub",
-        url: "https://github.com/smstone0/slack-vs-teams-jobs",
-      },
-    ],
+    moreImages: ["assets/dissertation.png"],
+    languages: ["Kotlin", "Jetpack Compose"],
+  },
+  {
+    title: "Interactive NLP-Based AI System for Calendar Management",
+    description: `Built a CLI-based conversational AI system in Python for calendar management, using a TF-IDF/cosine-similarity intent matcher to route user input. Implemented full calendar transaction flows (create, view, delete) with input validation, error recovery via targeted re-prompts, and a QA module using stemming and TF-IDF similarity search. Designed and ran a usability study (CUQ methodology, n=4, score 79.3/100) and evaluated QA system accuracy (86\%) against a custom test set.`,
+    thumbnail: {
+      src: "assets/hai/dialogue.png",
+      alt: "Interactive NLP-Based AI System for Calendar Management Thumbnail",
+    },
+    moreImages: ["assets/hai/dialogue.png", "assets/hai/system-architecture.png"],
+    languages: ["Python"],
   },
   {
     title: "Caloric",
-    date: "2023 - PRESENT",
-    description: `A cross-platform calorie counting app designed for simplicity and offline use, with a focus on beginner-friendly nutrition tracking by removing complexity like macros, meal times, and monetisation. I started this project to learn mobile development and interface design, prototyped with Figma and planned for Play Store release. 
-
-Currently (mostly) on pause due to other commitments, but I plan to resume development in the future.`,
+    description: `A cross-platform calorie counting app designed for simplicity and offline use, with a focus on beginner-friendly nutrition tracking by removing complexity like macros, meal times, and monetisation. I started this project to learn mobile development and interface design, prototyped with Figma and planned for Play Store release.`,
     thumbnail: {
-      src: "assets/caloric/caloric.png",
+      src: "assets/caloric/home.jpg",
       alt: "Caloric App Thumbnail",
     },
     moreImages: [
@@ -56,12 +55,11 @@ Currently (mostly) on pause due to other commitments, but I plan to resume devel
   },
   {
     title: "Software Engineering Group Project",
-    date: "2023 - 2024",
     description: `Led an 8-person team of computer science students in a year-long university group project, developing a mobile app free of charge for industry partner, Lots For Tots - an organisation which supports 26,000 families as of 2024. The app connects parents with nearby children's events and has integrated accessibility, offering visual comfort options and filtering events by SEN and wheelchair access.
         
 We created interactive prototypes and iteratively gathered requirements and user feedback to guide app design. Using Scrumban, paired programming and code reviews, we maintained high code quality. We showcased our work to academics, industry leaders and peers.`,
     thumbnail: {
-      src: "assets/lots-for-tots/lots-for-tots.png",
+      src: "assets/lots-for-tots/login.jpeg",
       alt: "Software Engineering Group Project Thumbnail",
     },
     moreImages: [
@@ -84,7 +82,6 @@ We created interactive prototypes and iteratively gathered requirements and user
   },
   {
     title: "Operating Systems and Concurrency",
-    date: "2023 - 2024",
     description: `University project to develop a multi-threaded process simulator in C using the POSIX API on Linux, incorporating key operating system principles such as process scheduling, concurrency control, and resource management. The simulator manages process creation, execution, and termination using a process table, priority-based scheduling, and linked-list-based queues for ready, I/O, and terminated processes. It supports both preemptive and non-preemptive scheduling, with processes running in a round-robin or FCFS fashion depending on priority. Semaphores and mutexes are used for synchronisation.
 
 To simulate real-world execution, the system includes an I/O daemon to handle blocked processes, a booster daemon to prevent starvation, and a load balancer to distribute workloads across multiple CPUs. Achieved 96%, 12.6% higher than the average score among students who completed all coursework components.`,
@@ -97,18 +94,16 @@ To simulate real-world execution, the system includes an I/O daemon to handle bl
   },
   {
     title: "Developing Maintainable Software",
-    date: "2023",
     description: `University project to improve an unfinished Java implementation of Snake, focusing on refactoring, feature additions and maintainability. Restructured the codebase to enhance readability and modularity, optimised event handling and game logic, and introduced new features such as a score board, improved collision detection, smoother animations, and persistent, customisable settings. The project adhered to OOP principles, followed the MVC design pattern, and maintained best practices in version control.`,
     thumbnail: {
       src: "assets/dms/game.png",
       alt: "Developing Maintainable Software Thumbnail",
     },
-    moreImages: ["assets/dms/scores.png", "assets/dms/settings.png"],
+    moreImages: ["assets/dms/game.png", "assets/dms/scores.png", "assets/dms/settings.png"],
     languages: ["Java"],
   },
   {
     title: "Databases and Interfaces",
-    date: "2023",
     description: `University project to build a website to enable users to search and manage movies and actors within a MySQL database.`,
     thumbnail: {
       src: "assets/dbi.png",
@@ -119,14 +114,12 @@ To simulate real-world execution, the system includes an I/O daemon to handle bl
   },
   {
     title: "Reversi",
-    date: "2023",
     description: `University project to develop the Reversi board game in Java using the MVC design pattern. The game features an AI opponent which greedily chooses the best available move. Achieved 100% mark.`,
     thumbnail: { src: "assets/reversi.png", alt: "Reversi Thumbnail" },
     languages: ["Java"],
   },
   {
     title: "Fundamentals of Artificial Intelligence",
-    date: "2023",
     description: `University project to utilise a dataset of patient data to build machine learning models for predicting whether a patient has heart disease using the sklearn, matplotlib, numpy and pandas libraries. Applied exploratory analysis and several pre-processing techniques, followed by building and evaluating both a decision tree and neural network. Achieved 96% mark.`,
     thumbnail: {
       src: "assets/fai/decision-tree.png",
@@ -142,7 +135,6 @@ To simulate real-world execution, the system includes an I/O daemon to handle bl
   },
   {
     title: "Graph Network Optimiser",
-    date: "2022-2023",
     description: `Multi-module coursework to create a graph library using linked lists, a TCP/IP network server to manage a graph of a network of networks and query the next hop, and to implement Dijkstra's algorithm to optimise packet routing between networks.`,
     thumbnail: {
       src: "assets/nottingham.svg",
@@ -152,7 +144,6 @@ To simulate real-world execution, the system includes an I/O daemon to handle bl
   },
   {
     title: "Programming and Algorithms",
-    date: "2022",
     description: `A series of courseworks written in C, ranging from calculating and printing Pascal's triangle to implementing shunting yard and classic sorting algorithms.`,
     thumbnail: {
       src: "assets/nottingham.svg",
@@ -162,7 +153,6 @@ To simulate real-world execution, the system includes an I/O daemon to handle bl
   },
   {
     title: "Systems and Architecture",
-    date: "2022",
     description: `A series of courseworks written in Assembly, ranging from hello world and fibonacci to a text formatter. The formatter reads keyboard input and outputs formatted text real-time within a specific column width, handling line breaks, newline resets, and preventing word splitting.`,
     thumbnail: {
       src: "assets/nottingham.svg",
@@ -172,7 +162,6 @@ To simulate real-world execution, the system includes an I/O daemon to handle bl
   },
   {
     title: "Computer Fundamentals",
-    date: "2022",
     description: `University coursework to implement a C network client to fetch multiple "Quotes of the Day" from a server.`,
     thumbnail: {
       src: "assets/nottingham.svg",
@@ -182,7 +171,6 @@ To simulate real-world execution, the system includes an I/O daemon to handle bl
   },
   {
     title: "GWC 2022",
-    date: "2022",
     description: `Three web projects I built during the Girls Who Code Summer Immersion Program in 2022, a two-week virtual program sponsored by Morgan Stanley. This was my first formal introduction to HTML, CSS and JavaScript and putting these skills into practice, including adherence to web content accessibility guidelines, such as colour contrast and alt text.
 
 1. An 'activist website' to spread awareness about a global issue - I chose electric vehicles (EVs)

@@ -96,8 +96,6 @@ function Project({ project }) {
                 );
               })}
           </div>
-          {project.languages && <p id="separator">|</p>}
-          <p id="date">{project.date}</p>
         </div>
       </div>
       <div id="content">
