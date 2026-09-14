@@ -8,9 +8,7 @@ function Home() {
         <header>
           <Header />
         </header>
-        <p id="header-title">
-          Software Engineer & Final Year Computer Science Student
-        </p>
+        <p id="header-title">Software Engineer</p>
         <Projects />
         <footer>
           <div id="project-page-footnote">Last updated: November 2025</div>
