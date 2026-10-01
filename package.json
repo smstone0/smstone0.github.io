@@ -4,13 +4,13 @@
   "homepage": "https://smstone0.github.io/",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/jest-dom": "^7.0.1",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "react-router-dom": "^7.9.6",
-    "web-vitals": "^5.1.0"
+    "react-router-dom": "^7.18.4",
+    "web-vitals": "^6.2.2"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -43,10 +43,10 @@
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
-    "@vitejs/plugin-react": "^4.7.0",
+    "@vitejs/plugin-react": "^6.1.1",
     "gh-pages": "^6.1.1",
-    "prettier": "^3.7.3",
-    "vite": "^6.4.3",
+    "prettier": "^3.9.9",
+    "vite": "^8.3.1",
     "vite-plugin-svgr": "^5.2.0"
   }
 }
